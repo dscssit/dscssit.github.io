@@ -1017,7 +1017,7 @@ main.main-06 {
 main .header.header-06 {
   position: unset;
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -1046,6 +1046,164 @@ main .main-wrapper.demo-06 {
           flex-direction: column;
   height: auto;
 }
+
+#myModal .modal-content {
+  background-color: #0A0A0A;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+#myModal .modal-content .modal-header h5 {
+  font-family: "Space Mono", sans-serif;
+}
+
+#myModal .modal-content .modal-header button {
+  color: #fff;
+}
+
+#myModal .modal-body {
+  padding: 0;
+}
+
+#myModal .modal-body img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.form-area {
+  display: flex;
+  padding-bottom: 50px;
+  
+}
+
+.form-area .form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem #141414;
+  background-color: #0A0A0A;;
+}
+
+.form-area .form .lft-btn img {
+  padding-right: 25px;
+  border-right: 2px solid #141414;
+  width: 95px;
+  height: 75px;
+}
+
+.form-area .form .info {
+  margin-left: 25px;
+}
+
+.form-area .form .info .heading h1 {
+  font-weight: 800;
+  font-size: 1.75rem;
+}
+
+.form-area .form .info .description h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.form-area .form .form-btn {
+  cursor:pointer;
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem;
+  height: 2.5rem;
+  padding: 0 1.2rem;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-evenly;
+  box-shadow: 0 0.75rem 1.25rem #292929;
+  border-radius: 1rem;
+}
+
+.form-btn:hover{
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.form-area .form .form-btn img{
+  width: 25px;
+  height: 25px;
+}
+
+.form-area .form .form-btn .text{
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .form-area .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .form-area .form .lft-btn img {
+    padding-right: 0;
+    border-right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .form-area .form .info {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  .form-area .form .info .heading h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .form-area .form .info .description h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .form-area .form .form-btn {
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 2rem;
+    height: 2.5rem;
+    padding: 0 1.2rem;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-evenly;
+    box-shadow: 0 0.75rem 1.25rem #292929;
+    border-radius: 1rem;
+  }
+}
+
 
 main .main-wrapper.demo-06 .hero-area {
   margin-bottom: 100px;
