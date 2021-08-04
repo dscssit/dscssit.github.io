@@ -1,5 +1,6 @@
-
-
+$(document).ready(function(){
+	$("#myModal").modal('show');
+});
 
 $(function () {
 "use strict";
